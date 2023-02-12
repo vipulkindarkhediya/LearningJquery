@@ -5,4 +5,4 @@
 * This repository clone 
 ### `https://github.com/vckindarkhediya/LearningJquery.git` 
 
-*[jquery selectors all](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-1-Learning/index.html)
+* [jquery selectors all](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-1-Learning/index.html)
