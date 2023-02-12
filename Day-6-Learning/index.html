@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+     .div_first {
+          border: 2px solid red;
+          text-align: center;
+          background-color: aqua;
+     }
+
+     .div_second {
+          border: 2px solid seagreen;
+          text-align: center;
+          background-color: slateblue;
+     }
+
+     .div_thard {
+          border: 2px solid firebrick;
+          text-align: center;
+          background-color: saddlebrown;
+     }
+</style>
+
+<body>
+     <div></div>
+     <button type="button">addClass</button>
+     <div class="div_second"></div>
+     <button type="button">removeClass</button>
+     <div id="togglediv"></div>
+     <button type="button" id="toggle">toggleClass</button>
+
+     <script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
+     <script>
+          $(document).ready(function () {
+               $("meta:last").html("<title>Jquery addClass, removeClass and toggleClass</title>");
+
+               var title = $("title").text();
+
+               $("div:first").before("<h1>" + title + "</h1>");
+
+               $("div:eq(0)").html("<h2>addClass() method</h2>");
+               $("h2C").after("<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis est impedit libero ab illum voluptateipsum porro</p>");
+               $("button:eq(0)").click(function (e) {
+                    e.preventDefault();
+                    $("div:eq(0)").addClass("div_first");
+               });
+               $("div:eq(1)").html("<h2>removeClass() method</h2>");
+               $("h2:eq(1)").after("<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis est impedit libero ab illum voluptateipsum porro</p>");
+               $("button:eq(1)").click(function (e) {
+                    e.preventDefault();
+                    $("div:eq(1)").removeClass("div_second");
+               });
+               $("div:eq(2)").html("<h2>toggleClass() method</h2>");
+               $("h2:eq(2)").after("<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis est impedit libero ab illum voluptateipsum porro</p>");
+
+               $("#toggle").click(function (e) {
+                    e.preventDefault();
+                    $("#togglediv").toggleClass("div_thard");
+
+               });
+
+
+          });
+     </script>
+
+</body>
+
+</html>
