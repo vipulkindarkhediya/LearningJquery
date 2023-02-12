@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+     .on {
+          background-color: red;
+          border: 2px solid yellowgreen;
+     }
+</style>
+
+<body>
+     <p></p>
+
+     <button type="button">off event</button>
+
+     <script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
+     <script>
+          $(document).ready(function () {
+               $("meta:last").html("<title>Jquery on() and of() method</title>");
+
+               var title = $("title").text();
+               $("p:first").before("<h1>" + title + "</h1>");
+               $("p").text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolores neque quisquam assumenda deserunt nisi quod harum");
+               $("p").on({
+                    "click": function () {
+                         $(this).css({ "background": "red" });
+                    },
+                    "mouseenter": function () {
+                         $(this).css({ "background": "yellow" });
+                    },
+                    "mouseleave": function () {
+                         $(this).css({ "background": "" });
+                    }
+               });
+               $("button:last").click(function (e) {
+                    e.preventDefault();
+                    $("p").off("mouseenter");
+               });
+
+
+          });
+     </script>
+
+</body>
+
+</html>
