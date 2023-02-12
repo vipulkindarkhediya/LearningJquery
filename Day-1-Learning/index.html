@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title></title>
+</head>
+
+<body>
+     <h1></h1>
+     <div id="idea"></div>
+     <div class="idea"></div>
+     <a class="this">click</a>
+     <p>p first </p>
+     <p class="child"></p>
+     <ul>
+          <li>ul li first first</li>
+          <li>ul li first second</li>
+          <li>ul li first third</li>
+     </ul>
+     <ul>
+          <li>ul li second first</li>
+          <li>ul li second second</li>
+          <li>ul li second third</li>
+     </ul>
+     <button>Click</button>
+
+
+
+     <script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
+     <script>
+          $(document).ready(function () {
+               $("title").html("Jquery basic selector");
+               $("body").css("font-family", "jetbrains mono");
+               $("h1").html("Jquery basic to advance selectors");
+               $("h1").after("<h2>h1 This way you can select any html tag</h2>");
+               $("#idea").html("<h2>#id This way you can select # id </h2>");
+               $(".idea").html("<h2>.class This way you can select any .class </h2>");
+               $("*").css("color", "red");
+               $(".this").click(function (e) {
+                    e.preventDefault();
+                    $(this).html("Current element click");
+
+               });
+               $("p:first").html("Paragraph first text");
+               $("p.child").html("Paragraph add child this paragraph class name");
+               $("button").click(function (event) {
+                    event.preventDefault();
+                    $("ul li:first").hide();
+                    $("ul li:first-child").hide();
+               })
+               $("ul li:even").css("background", "yellow");
+               $("ul li:odd").css("background", "black");
+          });
+     </script>
+</body>
+
+</html>
