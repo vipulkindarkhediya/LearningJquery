@@ -18,4 +18,4 @@
 
 * [Jquery class methods](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-6-Learning/index.html)
 
-* [Jquery css methods](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-7-Learning/index.html)
+* [Jquery inline css methods](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-7-Learning/index.html)
