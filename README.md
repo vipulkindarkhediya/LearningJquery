@@ -14,4 +14,6 @@
 
 * [Jquery form events](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-4-Learning/index.html)
 
-* [Jquery get methods](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-5-Learning/index.html)
+* [Jquery get & set methods](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-5-Learning/index.html)
+
+* [Jquery ](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-6-Learning/index.html)
