@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+     <script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
+     <script>
+          $("meta").after("<title>Jquery before() and after()</title>");
+          var title = $("title").text();
+          $("body").after("<h1>" + title + "</h1>");
+          $("h1").after("<h2>before() method</h2>");
+          $("h2").after("<button>before method");
+          $("button").after("<button>after method</button> ");
+          $("h2").after("<p>before click and after click     </p>");
+          $("button:first").click(function (e) {
+               e.preventDefault();
+               $("p").before("<h3></h3>");
+               $("h3").before(function () {
+                    $(this).html("<h1>click before</h1>");
+
+               });
+
+          });
+          $("button:last").click(function (e) {
+               e.preventDefault();
+               $("p").after("<h2></h2>");
+               $("h2:eq(2)").after(function () {
+                    $(this).html("<h1>click after");
+               });
+
+          });
+
+     </script>
+</body>
+
+</html>
