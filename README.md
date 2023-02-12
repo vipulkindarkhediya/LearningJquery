@@ -12,5 +12,6 @@
 
 * [Jquery Keyboard events](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-3-Learning/index.html)
 
-
 * [Jquery form events](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-4-Learning/index.html)
+
+* [Jquery get methods](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-5-Learning/index.html)
