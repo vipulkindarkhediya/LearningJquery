@@ -16,4 +16,4 @@
 
 * [Jquery get & set methods](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-5-Learning/index.html)
 
-* [Jquery ](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-6-Learning/index.html)
+* [Jquery class methods](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-6-Learning/index.html)
