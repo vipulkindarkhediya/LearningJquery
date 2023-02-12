@@ -5,4 +5,4 @@
 * This repository clone 
 ### `https://github.com/vckindarkhediya/LearningJquery.git` 
 
-* Day-1-Learn <a href ="https://github.com/vckindarkhediya/Learningphp/blob/php/Day-1-Learning/index.php">echo & print </a><br>
+*[jquery selectors all](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-1-Learning/index.html)
