@@ -24,3 +24,5 @@
 * [Jquery prepend() and append()](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-9-Learning/index.html)
 
 * [Jquery before() and after()](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-10-Learning/index.html)
+
+* [Jquery remove() and empty()](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-11-Learning/index.html)
