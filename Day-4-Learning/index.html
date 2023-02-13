@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Jquery form events</title>
+
+</head>
+
+<body>
+     <div></div>
+     <span id="focus"></span>
+     <input type="text" class="focus">
+     <input type="text" class="focus">
+     <input type="text" class="focus">
+     <br>
+     <span id="blur"></span>
+     <input type="text" class="blur">
+     <input type="text" class="blur">
+     <br>
+     <span id="change"></span>
+     <select class="change">
+          <option>Choose country</option>
+          <option value="Indian">Indian</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="American">American</option>
+     </select>
+     <span></span><br><br>
+     <span></span>
+     <form id="subform">
+          <input type="text" id="name" placeholder="Enter name">
+          <input type="submit" value="Send">
+
+     </form>
+     <span></span>
+     <input type="text" id="select" placeholder="Enter name">
+     <script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
+     <script>
+          $(document).ready(function () {
+               $("meta:last").html("<title>Jquery form events</title>");
+               var title = $("title").html();
+               $("div").html("<h1>" + title + "</h1>");
+               $("#focus").html("<h2>focus</h2>");
+               $(".focus").focus(function (e) {
+                    e.preventDefault();
+                    $(this).css("background-color", "green");
+               });
+               $("#blur").html("<h2>blur</h2>");
+               $(".blur").blur(function (e) {
+                    e.preventDefault();
+                    $(this).css("background-color", "red");
+               });
+               $("#change").html("<h2>Change</h2>");
+               $(".change").change(function (e) {
+                    e.preventDefault();
+
+                    var val = $(this).val();
+
+                    $("span:eq(-3)").html("Your select country " + "<strong>" + val + "</strong>");
+                    $("strong").css("background", "black");
+                    $("strong").css("color", "red");
+               });
+
+               $("span:eq(-2)").html("<h1>Submit</h1>");
+               $("#subform").submit(function (e) {
+                    e.preventDefault();
+                    alert("Form submit Successfully !");
+
+               });
+               $("span:eq(-1)").html("<h1>Select</h1>");
+               $("#select").select(function () { $(this).css("background", "red"); 
+                    
+               });
+
+
+          });
+     </script>
+</body>
+
+</html>

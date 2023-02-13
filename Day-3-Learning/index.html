@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+     <div class="press"></div>
+     <div class="up"></div>
+     <div class="down"></div>
+     <script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
+     <script>
+          $(document).ready(function () {
+               $("meta:last").after("<title>Jquery Keyboard Events</title>");
+               $(".press").before("<h1>Jquery Keyboard Events</h1>");
+               $(".press").html("<h2>Jquery Keyboard Press event (keypress) body add background:red</h2>");
+               $("body").keypress(function (e) {
+                    e.preventDefault();
+                    $(this).css("background", "red");
+               });
+               $(".up").html("<h2>Jquery Keyboard Up event (keyup) ");
+               $("body").keyup(function (e) {
+                    e.preventDefault();
+                    $(".up").css("background", "green");
+               });
+               $("div.down").html("<h2>Jquery Keyboard Down event (keydown) </h2>");
+               $("div.down").keydown(function (e) {
+                    e.preventDefault();
+                    $("div.down").css("background", "blue");
+               });
+
+          });
+     </script>
+</body>
+
+</html>

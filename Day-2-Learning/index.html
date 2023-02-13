@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title></title>
+</head>
+
+<body>
+     <h1></h1>
+     <span class="click">click</span>
+     <div class="right"></div>
+     <div class="dbclick"></div>
+     <div class="mouseenter"></div>
+     <div class="mouseleave"></div>
+     <div class="hover"></div>
+
+
+     <script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
+     <script>
+          $(document).ready(function () {
+               $("title").html("Mouse Events");
+               $("body").css("fontFamily", "jetbrains Mono");
+               $("h1").html("<h2>Mouse Click Event (click)");
+               $(".click").click(function (event) { event.preventDefault(); $(".click").css("background", "green"); });
+               $(".right").html("<h2>Mouse Right click Event (contextmenu)</h2>");
+               $(".right").contextmenu(function (event) { event.preventDefault(); $(".right").css("background", "red"); });
+               $(".dbclick").html("<h2>Mouse Double click event (dbclick)");
+               $(".dbclick").dblclick(function (event) { event.preventDefault(); $(".dbclick").css("background", "green"); });
+               $(".mouseenter").html("<h2>Mouse mouseenter event (mouseenter)</h2>");
+               $(".mouseenter").mouseenter(function () { $(".mouseenter").css("background", "black"); });
+               $(".mouseleave").html("<h2>Mouse mouseleave event (mouseleave)</h2>");
+               $(".mouseleave").mouseleave(function () { $(".mouseleave").css("background", "black") });
+               $(".hover").html("<h2>Mouse hover event (hover)</h2>");
+               $(".hover").hover(function () { $(".hover").css("background","red");});
+          });
+     </script>
+</body>
+
+</html>

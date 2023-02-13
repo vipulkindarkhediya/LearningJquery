@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+     <div></div>
+     <div>
+          <h2>get & set html method</h2>
+          <p>Output console print</p>
+
+     </div>
+     <span></span>
+     <div>
+          <h2>get & set text method</h2>
+          
+          <p>Output console print</p>
+     </div>
+     <div>
+          <h2 class="attr">get & set attr method</h2>
+          
+          <p>Output console print</p>
+     </div>
+     <form id="getVal">
+          <input type="text" name="name" value="name" id="name" placeholder="sadas">
+          <button type="submit">Send</button>
+     </form>
+     <script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
+     <script>
+          $(document).ready(function () {
+               $("meta:last").after("<title>Jquery get & set methods</title>");
+
+               var title = $("title").html();
+               $("div:first").html("<h1>" + title + "</h1>");
+
+               var html = $("div:eq(1)").html();
+               console.log(html);
+
+               var text = $("div:eq(2)").text();
+               console.log(text);
+
+               var attr = $("div:eq(3) h2").attr("class");
+               console.log(attr);
+
+               $("#getVal").before("<h2>get val method </h2>");
+               $("#getVal").submit(function (e) {
+                    e.preventDefault();
+
+                    var val = $("#name").val();
+
+                    console.log(val);
+               });
+
+          });
+     </script>
+</body>
+
+</html>
