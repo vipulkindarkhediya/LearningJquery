@@ -24,7 +24,18 @@
      <button>Empty</button>
 
      <script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
-     <script src="index.js"></script>
+     <script>
+          $(document).ready(function () {
+               $("button:first").click(function (e) {
+                    e.preventDefault();
+                    $("p").remove();
+               });
+               $("button:last").click(function (e) {
+                    e.preventDefault();
+                    $("p").empty();
+               });
+          });
+     </script>
 </body>
 
 </html>
