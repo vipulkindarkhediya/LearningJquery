@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Jquery replaceWith and replaceAll</title>
+</head>
+<style>
+     div {
+          background: darkblue;
+          padding: 20px;
+          color: white;
+     }
+</style>
+
+<body>
+     <h1>Jquery replaceWith and replaceAll</h1>
+     <div>
+          <h2>replaceWith</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero harum earum sed ad deleniti consequatur
+               sit
+               reiciendis repellat ut perferendis ipsam dicta vel atque, facilis cumque quasi velit pariatur ullam?
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero harum earum sed ad deleniti consequatur
+               sit
+               reiciendis repellat ut perferendis ipsam dicta vel atque, facilis cumque quasi velit pariatur ullam?
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero harum earum sed ad deleniti consequatur
+               sit
+               reiciendis repellat ut perferendis ipsam dicta vel atque, facilis cumque quasi velit pariatur ullam?
+          </p>
+     </div>
+     <button>replaceWith</button>
+     <button>replaceAll</button>
+     <script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
+     <script>
+          $(document).ready(function () {
+               $("button:first").click(function (e) {
+                    e.preventDefault();
+
+                    $("div p:first").replaceWith("<h2>click by replcewith");
+               });
+               $("button:last").click(function (e) {
+                    e.preventDefault();
+                    $("<h2>click by replaceall</h2>").replaceAll("div p");
+
+               });
+          });
+     </script>
+
+</body>
+
+</html>
