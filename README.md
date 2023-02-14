@@ -33,4 +33,4 @@
 
 * [Jquery replaceWith & replaceAll](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-14-Learning/index.html)
 
-* [Jquery wrap() & unwrap()](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-15-Learning/index.html)
+* [Jquery wrap() & unwrap()](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-15~-Learning/index.html)
