@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Jquery wrap() and unwrap()</title>
+</head>
+<style>
+     div {
+          background: saddlebrown;
+          color: aliceblue;
+          padding: 20px;
+
+     }
+
+     .wrap {
+          background: seagreen;
+          color: aliceblue;
+          padding: 20px;
+     }
+</style>
+
+<body>
+     <h1>Jquery wrap() and unwrap()</h1>
+     <div>
+          <h2>Click the</h2>
+          <p>
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero saepe delectus iusto at quas, nam
+               blanditiis
+               eum provident deleniti molestiae soluta fuga cum accusamus exercitationem. Totam dolores et aut repellat?
+          </p>
+     </div>
+     <button>wrap</button>
+     <button>unwrap</button>
+     <script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
+     <script>
+          $(document).ready(function () {
+               $("button:first").click(function (e) {
+                    e.preventDefault();
+                    $("div h2").text("Click by wrap");
+                    $("div p").wrap('<div class="wrap"></div>');
+               });
+               $("button:last").click(function (e) {
+                    e.preventDefault();
+                    $("div h2").text("click by unwrap");
+                    $("div p").unwrap();
+               });
+          });
+     </script>
+
+</body>
+
+</html>
