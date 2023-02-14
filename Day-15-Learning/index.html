@@ -25,7 +25,7 @@
 <body>
      <h1>Jquery wrap() and unwrap()</h1>
      <div>
-          <h2>Click the</h2>
+          <h2>Click by <span></span></h2>
           <p>
                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero saepe delectus iusto at quas, nam
                blanditiis
@@ -39,12 +39,12 @@
           $(document).ready(function () {
                $("button:first").click(function (e) {
                     e.preventDefault();
-                    $("div h2").text("Click by wrap");
+                    $("div h2 span").text(" wrap");
                     $("div p").wrap('<div class="wrap"></div>');
                });
                $("button:last").click(function (e) {
                     e.preventDefault();
-                    $("div h2").text("click by unwrap");
+                    $("div h2 span").text("unwrap");
                     $("div p").unwrap();
                });
           });
