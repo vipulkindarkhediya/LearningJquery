@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>jquery clone method</title>
+</head>
+<style>
+     div {
+          margin-bottom: 10px;
+     }
+
+     div:first-of-type {
+          background: seagreen;
+          border: 5px solid greenyellow;
+          padding: 20px;
+
+     }
+
+     div:last-of-type {
+          background: sienna;
+          border: 5px solid aqua;
+          padding: 20px;
+     }
+</style>
+
+<p>
+<h1>Jquery clone() </h1>
+<div>
+     <h2>First box</h2>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia a quis inventore. Corporis, excepturi
+          incidunt! Cupiditate praesentium perferendis numquam illo saepe repellat soluta sit facilis, temporibus
+          possimus nobis deserunt placeat!
+     </p>
+</div>
+<div>
+     <h2>Second box</h2>
+</div>
+<button>clone method</button>
+<script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
+<script>
+     $(document).ready(function () {
+          $("button").click(function (e) {
+               e.preventDefault();
+               $("div:first p").clone().appendTo("div:last");
+          });
+     });
+</script>
+
+</body>
+
+</html>
