@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Jquery AppendTo and PrependTo</title>
+</head>
+
+<body>
+     <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deserunt harum perferendis sequi commodi
+          labore iure nobis earum laborum, minus adipisci recusandae, nesciunt error, exercitationem numquam magni! Sed,
+          non sequi?
+     </p>
+     <button>PrependTo</button>
+     <button>AppendTo</button>
+     <script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
+     <script>
+          $(document).ready(function () {
+               var title = $("title").text();
+               $("p").before("<h1>" + title + "</h1>");
+               $("button:first").click(function (e) {
+                    e.preventDefault();
+                    $("<h2>Click by prependTo</h2>").prependTo("p");
+               });
+               $("button:last").click(function (e) {
+                    e.preventDefault();
+                    $("<h2>Click by appendTo</h2>").appendTo("p");
+               });
+          });
+     </script>
+</body>
+
+</html>
