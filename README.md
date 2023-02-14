@@ -27,5 +27,6 @@
 
 * [Jquery remove() and empty()](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-11-Learning/index.html)
 
-
 * [Jquery prependTo() and appendTo()](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-12-Learning/index.html)
+
+* [Jquery clone()](https://github.com/vckindarkhediya/LearningJquery/blob/j-query/Day-13-Learning/index.html)
